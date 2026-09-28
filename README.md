@@ -2,7 +2,7 @@
 
 Deploys an Azure VPN Gateway within a Virtual Hub (`azurerm_vpn_gateway`), covering BGP
 settings (including on-prem peering addresses), routing preference, scale unit, and BGP
-route translation for NAT. Requires azurerm `~> 5.0`.
+route translation for NAT. Requires azurerm `>= 4.9.0, < 6.0.0`.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -10,7 +10,7 @@ route translation for NAT. Requires azurerm `~> 5.0`.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 5.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.9.0, < 6.0.0 |
 
 ## Providers
 
