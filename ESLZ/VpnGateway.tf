@@ -5,7 +5,7 @@ variable "vpn_gateways" {
 }
 
 module "vpn_gateway" {
-  source   = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-vpn_gateway?ref=v1.0.1"
+  source   = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-vpn_gateway?ref=v1.0.2"
   for_each = var.vpn_gateways
 
   env               = var.env

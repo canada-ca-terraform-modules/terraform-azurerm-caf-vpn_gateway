@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Removed
+
+- `vpn_gateway_ip_configuration` output — `ip_configuration` is not an exported attribute of
+  `azurerm_vpn_gateway` on provider versions before 5.x, which broke `terraform init`/`plan`
+  for any consumer resolving to an older 4.x provider within this module's own
+  `>= 4.9.0, < 6.0.0` constraint.
+
+## [1.0.1]
+
 ### Changed
 
 - Widened the `azurerm` provider constraint from `~> 5.0` to `>= 4.9.0, < 6.0.0` so the
@@ -22,4 +31,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   `instance_1_bgp_peering_address`.
 - ESLZ wrapper (`ESLZ/VpnGateway.tf`) and example tfvars (`ESLZ/VpnGateway.tfvars`).
 - Baseline test coverage (`tests/vpn_gateway.tftest.hcl`).
-- Live-test CI harness (`test/live/`) wired to the shared OIDC sandbox identity.
