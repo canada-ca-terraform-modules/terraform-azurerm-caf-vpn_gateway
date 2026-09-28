@@ -47,7 +47,6 @@ No modules.
 |------|-------------|
 | <a name="output_vpn_gateway_bgp_settings"></a> [vpn\_gateway\_bgp\_settings](#output\_vpn\_gateway\_bgp\_settings) | Outputs the bgp\_settings block of the VPN Gateway, including the pre-defined BGP peering addresses used when configuring on-prem VPN sites |
 | <a name="output_vpn_gateway_id"></a> [vpn\_gateway\_id](#output\_vpn\_gateway\_id) | Outputs the id of the VPN Gateway |
-| <a name="output_vpn_gateway_ip_configuration"></a> [vpn\_gateway\_ip\_configuration](#output\_vpn\_gateway\_ip\_configuration) | Outputs the ip\_configuration block of the VPN Gateway |
 | <a name="output_vpn_gateway_name"></a> [vpn\_gateway\_name](#output\_vpn\_gateway\_name) | Outputs the name of the VPN Gateway |
 | <a name="output_vpn_gateway_object"></a> [vpn\_gateway\_object](#output\_vpn\_gateway\_object) | Outputs the entire VPN Gateway object |
 <!-- END_TF_DOCS -->

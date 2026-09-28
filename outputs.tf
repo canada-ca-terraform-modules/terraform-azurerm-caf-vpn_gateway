@@ -17,8 +17,3 @@ output "vpn_gateway_bgp_settings" {
   description = "Outputs the bgp_settings block of the VPN Gateway, including the pre-defined BGP peering addresses used when configuring on-prem VPN sites"
   value       = azurerm_vpn_gateway.vpn_gateway.bgp_settings
 }
-
-output "vpn_gateway_ip_configuration" {
-  description = "Outputs the ip_configuration block of the VPN Gateway"
-  value       = azurerm_vpn_gateway.vpn_gateway.ip_configuration
-}
