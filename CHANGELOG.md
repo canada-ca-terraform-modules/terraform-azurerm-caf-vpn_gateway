@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Widened the `azurerm` provider constraint from `~> 5.0` to `>= 4.9.0, < 6.0.0` so the
+  module stays usable by consumers still on the 4.x provider line (e.g. `L1_blueprint_base`).
+
+## [1.0.0]
+
 ### Added
 
 - Initial scaffold of the `terraform-azurerm-caf-vpn_gateway` module wrapping
